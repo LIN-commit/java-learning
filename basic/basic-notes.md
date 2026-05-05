@@ -153,4 +153,3 @@ public static void main(String[] args) {
 6
 6
 ```
-以上就是java基础内容了。下一篇我们将学习各类运算符，欢迎继续关注蓝猫学姐的java学习笔记~

@@ -1,0 +1,12 @@
+public class DoubleDemo {
+    //【错误示例】表达式结果不能是小数
+    public static void main(String[] args) {
+        double weekday1 = 1.5;
+        switch(weekday1) {
+            //这里会报错
+            case 1.5 :
+                System.out.println("红烧排骨");
+                break;
+        }
+    }
+}

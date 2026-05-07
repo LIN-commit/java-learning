@@ -1,0 +1,8 @@
+public class Index_error {
+    //索引越界
+    public static void main(String[] args) {
+        //定义数组
+        int[] arr = {10,20,30,40,50};
+        int num = arr[10];
+    }
+}

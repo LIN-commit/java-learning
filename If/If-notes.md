@@ -11,9 +11,9 @@
 https://github.com/LIN-commit/java-learning  
 代码所在目录：java-learning/IfDemo/  
 本节对应代码文件：
-- AgeDemo.java :if语句示例，判断是否成年
-- TriangleDemo.java :判断三条边是否可以构成三角形
-- ScannerTriangle.java :键盘录入任意三个大于0的整数，判断它们构成什么三角形
+- condition.AgeDemo.java :if语句示例，判断是否成年
+- condition.TriangleDemo.java :判断三条边是否可以构成三角形
+- condition.ScannerTriangle.java :键盘录入任意三个大于0的整数，判断它们构成什么三角形
 ##  if语句格式
 ```text
 if(关系表达式){
@@ -23,7 +23,7 @@ if(关系表达式){
 **关系表达式**是用关系运算符（>,<,==,!=,<=,>=）连接起来的式子，结果只能是true或false
 关系表达式结果为true,执行语句体
 ### 例题
-对应代码：**AgeDemo.java**
+对应代码：**condition.AgeDemo.java**
 ```java
  public static void main(String[] args) {
         int age = 18;
@@ -65,7 +65,7 @@ else{
 ### 例题
 **判断a,b,c三条边是否可以构成三角形**  
 (原理是任意两边之和大于第三边)  
-对应代码：**TriangleDemo.java**
+对应代码：**condition.TriangleDemo.java**
 ```java
 public static void main(String[] args) {
         int a =2;
@@ -84,7 +84,7 @@ public static void main(String[] args) {
 ```
 ### 例题
 **键盘录入任意三个大于0的整数，判断它们构成什么三角形**  
-对应代码：**ScannerTriangle.java**
+对应代码：**condition.ScannerTriangle.java**
 ```java
 import java.util.Scanner;
 public class test1 {

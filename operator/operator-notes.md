@@ -24,12 +24,12 @@
 https://github.com/LIN-commit/java-learning  
 代码所在目录：java-learning/operator/  
 本节对应代码文件：
-- ArithmeticDemo.java :小数直接参与运算，结果可能不准确
-- SplitDemo.java :数值拆分经典例题
-- CastDemo.java :强制转换易错点
-- CharCovertDemo.java :大写字母转换小写字母，经典例题
-- StringDemo.java :字符串拼接操作
-- TernaryDemo.java :三元运算符实例
+- operator.ArithmeticDemo.java :小数直接参与运算，结果可能不准确
+- operator.SplitDemo.java :数值拆分经典例题
+- operator.CastDemo.java :强制转换易错点
+- operator.CharCovertDemo.java :大写字母转换小写字母，经典例题
+- operator.StringDemo.java :字符串拼接操作
+- operator.TernaryDemo.java :三元运算符实例
 ## 算术运算符
 - **\+**
 - **\-**
@@ -37,7 +37,7 @@ https://github.com/LIN-commit/java-learning
 - **/**
 - **%(取余)**  
   计算时一般用int，如果用double，小数直接参与运算，结果可能是不精确的  
-  对应代码：**ArithmeticDemo.java**
+  对应代码：**operator.ArithmeticDemo.java**
 ```java
 public static void main(String[] args) {
         double a =1.1;
@@ -51,11 +51,11 @@ public static void main(String[] args) {
 ```
 ### 数值拆分（经典例题）
 **题目：键盘录入一个三位数，将其拆分为个位十位百位后，打印在控制台**  
-对应代码：**SplitDemo.java**
+对应代码：**operator.SplitDemo.java**
 ```java
 import java.util.Scanner;
 
-public class SplitDemo {
+public class operator.SplitDemo {
     //键盘录入一个三位数，拆分个位十位百位，并打印在控制台
     public static void main(String[] args) {
         //键盘录入一个三位数
@@ -110,7 +110,7 @@ int a = 1;
 byte b = (byte)a;
 ```
 **易错点**  
-对应代码：**CastDemo.java**
+对应代码：**operator.CastDemo.java**
 ```java
 byte a =10;
 byte b =20;
@@ -146,7 +146,7 @@ B-66，b-98
 大小写字母固定相差32
 ### 例题
 **大写字母转化为小写字母**  
-对应代码：**CharCovertDemo.java**
+对应代码：**operator.CharCovertDemo.java**
 ```java
  public static void main(String[] args) {
        char c = 'A';
@@ -159,7 +159,7 @@ B-66，b-98
 a
 ```
 ## 字符串运算
-对应代码：**StringDemo.java**  
+对应代码：**operator.StringDemo.java**  
 字符串只有 **+** 操作，任意数据+字符串都是拼接操作，形成新字符串
 1.
 ```java
@@ -226,7 +226,7 @@ System.out.println(10+8+"岁"+1+2);
 执行逻辑：**关系表达式成立，则执行表达式1；关系表达式不成立，则执行表达式2**
 ### 例题
 **输出两个数中较大的那个数**  
-对应代码：**TernaryDemo.java**
+对应代码：**operator.TernaryDemo.java**
 ```java
 public static void main(String[] args) {
         int a = 2;

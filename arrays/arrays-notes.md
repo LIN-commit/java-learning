@@ -29,21 +29,21 @@
 <https://github.com/LIN-commit/java-learning>  
 代码所在目录：java-learning/arrays/  
 本节对应代码：
-- ArrayDemo1.java :数组静态初始化
-- ArrayDemo2.java :数组的数据修改
-- ArrayDemo3.java :数组的遍历
-- ArrayDemo4.java :数组的动态初始化
+- array.basic.ArrayDemo1.java :数组静态初始化
+- array.basic.ArrayDemo2.java :数组的数据修改
+- array.basic.ArrayDemo3.java :数组的遍历
+- array.basic.ArrayDemo4.java :数组的动态初始化
 - Index_error.txt :索引越界
-- SearchDemo.java :查找数据
-- MaxNumber.java :求最值
-- PreDemo.java :交换两个变量的值
-- ArrayShuffle.java :打乱数组中的数据
-- OnlyDemo_error.java :去除重复数据的错误写法
-- OnlyDemo_right.java :去除重复数据的正确写法
-- PointerDemo.java :设置快慢指针
-- SumDemo1.java :LeetCode算法题，两数之和
-- MergeArray.java :LeetCode算法题，合并有序数组
-- LeetSearch.java :LeetCode算法题，查找元素
+- array.cases.SearchDemo.java :查找数据
+- array.cases.MaxNumber.java :求最值
+- array.cases.PreDemo.java :交换两个变量的值
+- array.cases.ArrayShuffle.java :打乱数组中的数据
+- array.cases.OnlyDemo_error.java :去除重复数据的错误写法
+- array.cases.OnlyDemo_right.java :去除重复数据的正确写法
+- array.cases.PointerDemo.java :设置快慢指针
+- array.cases.SumDemo1.java :LeetCode算法题，两数之和
+- array.cases.MergeArray.java :LeetCode算法题，合并有序数组
+- array.cases.LeetSearch.java :LeetCode算法题，查找元素
 ## 数组定义
 数组：是一种容器，可以用来存储同种数据类型的多个值
 
@@ -63,9 +63,9 @@
 - 数组是连续的空间
 - 数组一旦定义，长度不可变
 ### 简单示例
-对应代码：**ArrayDemo1.java**
+对应代码：**array.basic.ArrayDemo1.java**
 ```java
-public class ArrayDemo1 {
+public class array.basic.ArrayDemo1 {
     //数组定义的简单示例
     public static void main(String[] args) {
         //1.定义数组存储3位同学的年龄
@@ -97,9 +97,9 @@ public class ArrayDemo1 {
 ```
 `arr[5]=10;`把索引为5的数据值改为10
 ### 示例
-对应代码：**ArrayDemo2.java**
+对应代码：**array.basic.ArrayDemo2.java**
 ```java
-public class ArrayDemo2 {
+public class array.basic.ArrayDemo2 {
     //数组中的元素访问：获取、修改
     public static void main(String[] args) {
         //利用静态初始化创建数组
@@ -123,9 +123,9 @@ public class ArrayDemo2 {
 ## 数组的遍历
 遍历：利用循环依次获取数组里面的数据
 ### 简单示例
-对应代码：**ArrayDemo3.java**
+对应代码：**array.basic.ArrayDemo3.java**
 ```java
-public class ArrayDemo3 {
+public class array.basic.ArrayDemo3 {
     //数组遍历
     public static void main(String[] args) {
         int[] arr={10,20,30,40,50};
@@ -166,11 +166,11 @@ public class ArrayDemo3 {
 ```
 `int[] arr = new int[3];`
 ### 简单示例
-对应代码：**ArrayDemo4.java**
+对应代码：**array.basic.ArrayDemo4.java**
 ```java
 import java.util.Scanner;
 
-public class ArrayDemo4 {
+public class array.basic.ArrayDemo4 {
     //动态初始化
     //键盘录入5个整数，存入数组当中，并进行遍历
     public static void main(String[] args) {
@@ -224,11 +224,11 @@ public class error {
 - 需求：已知数组元素位{33,5,22,44,55,33}，键盘录入任意一个数据，查找这个数据在数组中是否存在，如果数组中要查找的数据出现多次，只要显示第一次的索引即可
 - 输出要求：如果存在，打印索引  
   如果不存在，提示：该数据不存在  
-  对应代码：**SearchDemo.java**
+  对应代码：**array.cases.SearchDemo.java**
 ```java
 import java.util.Scanner;
 
-public class SearchDemo {
+public class array.cases.SearchDemo {
     //查找数据
     public static void main(String[] args) {
         //定义数组
@@ -284,9 +284,9 @@ public class SearchDemo {
 ```
 ### 例题：求最值
 - 需求：已知数组元素位{33,5,22,44,55},找出最大值并打印  
-  对应代码：**MaxNumber.java**
+  对应代码：**array.cases.MaxNumber.java**
 ```java
-public class MaxNumber {
+public class array.cases.MaxNumber {
     //找出数组中的最大值并打印
     public static void main(String[] args) {
         //创建数组
@@ -309,9 +309,9 @@ public class MaxNumber {
 ### 例题：打乱数组中的数据
 - 前置练习  
   交换两个变量的值  
-  对应代码：**PreDemo.java**
+  对应代码：**array.cases.PreDemo.java**
 ```java
-public class PreDemo {
+public class array.cases.PreDemo {
     //前置练习：交换两个变量的值
     public static void main(String[] args) {
         int a = 10;
@@ -331,11 +331,11 @@ public class PreDemo {
 10
 ```
 - 题目需求：已知数组元素为{1,2,3,4,5,6,7,8,9,10},要求打乱数组中的数据
-  对应代码：**ArrayShuffle.java**
+  对应代码：**array.cases.ArrayShuffle.java**
 ```java
 import java.util.Random;
 
-public class ArrayShuffle {
+public class array.cases.ArrayShuffle {
     //已知数组为{1,2,3,4,5,6,7,8,9,10}，打乱数组的数据
     /*
     思路：
@@ -371,7 +371,7 @@ public class ArrayShuffle {
 ```
 ### 去除重复数据
 题目需求：获取10个1~100之间的随机数并存入数组当中，要求数据是唯一的
-- 对应代码：**OnlyDemo_error.java**
+- 对应代码：**array.cases.OnlyDemo_error.java**
 ```java
 import java.util.Random;
 
@@ -414,11 +414,11 @@ public class OnlyDemo {
 34 23 72 85 0 0 29 31 21 74 
 ```
 可以看到[运行结果2]是有问题的，随机数生成范围是1~100，而出现0的原因，是因为在生成重复的数据之后，这个重复的数值并没有存入数组，系统就分配默认初始值0
-- 修改后的对应代码：**OnlyDemo_right.java**
+- 修改后的对应代码：**array.cases.OnlyDemo_right.java**
 ```java
 import java.util.Random;
 
-public class OnlyDemo_right {
+public class array.cases.OnlyDemo_right {
     //生成随机数并存入数组，要求数据是唯一的
    /*之前的代码OnlyDemo_error.java中
    出现重复数据，数组会填入默认值0，这是不符合题目需求的
@@ -459,9 +459,9 @@ public class OnlyDemo_right {
   相等->舍弃快指针位置的数据  
   不等->快指针的数据存入慢指针的位置  
   **注意：这里的指针其实就是两个变量**  
-  对应代码：**PointerDemo.java**
+  对应代码：**array.cases.PointerDemo.java**
 ```java
-public class PointerDemo {
+public class array.cases.PointerDemo {
     public static void main(String[] args) {
         //定义一个递增有序数组，去除其中重复元素
         int[] arr={1,2,2,2,2,2,3,3,3,3};
@@ -495,9 +495,9 @@ public class PointerDemo {
 **题目：给定一个整数数组nums和一个整数目标值target，请你在该数组中找出和为目标值target的那两个整数，并输出它们的数组索引**  
 提示：先不考虑效率问题，两层循环即可
 - 要求1：只要输出第一对满足要求的情况  
-  对应代码：**SumDemo1.java**
+  对应代码：**array.cases.SumDemo1.java**
 ```java
-public class SumDemo1 {
+public class array.cases.SumDemo1 {
     //两数之和
     //只要输出第一对满足要求的情况
     public static void main(String[] args) {
@@ -526,9 +526,9 @@ public class SumDemo1 {
 0,1
 ```
 - 要求：输出所有满足要求的情况  
-  对应代码：**SumDemo2.java**
+  对应代码：**array.cases.SumDemo2.java**
 ```java
-public class SumDemo2 {
+public class array.cases.SumDemo2 {
     //两数之和
     //输出所有满足要求的情况
     public static void main(String[] args) {
@@ -563,9 +563,9 @@ public class SumDemo2 {
 ### 合并有序数组
 **题目：给你两个有序数组arr1和arr2，将两个数组中的数据合并到一个大数组中。**
 - 要求：合并之后的数组也是有序的  
-  对应代码：**MergeArray.java**
+  对应代码：**array.cases.MergeArray.java**
 ```java
-public class MergeArray {
+public class array.cases.MergeArray {
     //合并有序数组
     public static void main(String[] args) {
         //定义两个数组
@@ -613,9 +613,9 @@ public class MergeArray {
 ```
 ### 查找元素
 **题目：给定一个递增的有序数组和一个目标值，在数组中找到目标值，打印其索引。如果目标值不存在于数组中，打印应插入的位置。**  
-对应代码：**LeetSearch.java**
+对应代码：**array.cases.LeetSearch.java**
 ```java
-public class LeetSearch {
+public class array.cases.LeetSearch {
     //查找元素
     /*
     思路：遍历数组，找到第一个nums[i]>=target的值

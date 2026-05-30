@@ -25,17 +25,17 @@
 <https://github.com/LIN-commit/java-learning>  
 代码所在目录：java-learning/loop/  
 本节对应代码：
-- ForDemo.java : for循环简单示例
-- WhileDemo.java :while循环简单示例
-- InfiniteLoop.java :无限循环
+- loop.basic.ForDemo.java : for循环简单示例
+- loop.basic.WhileDemo.java :while循环简单示例
+- loop.basic.InfiniteLoop.java :无限循环
 - InfiniteLoop_error.txt :无限循环错误示例
-- BreakDemo.java :break使用示例
-- PrimeNumber_Demo1 ；判断一个数是否是质数的写法一
-- PrimeNumber_Demo2 ：判断一个数是否是质数的写法二
-- ContinueDemo.java :continue使用示例
-- NumberGuess.java :猜数字经典例题
-- PrintPattern.java :打印一个4行5列的图形
-- RightTriangle.java :打印一个直角三角形
+- loop.basic.BreakDemo.java :break使用示例
+- loop.cases.PrimeNumber_Demo1 ；判断一个数是否是质数的写法一
+- loop.cases.PrimeNumber_Demo2 ：判断一个数是否是质数的写法二
+- loop.basic.ContinueDemo.java :continue使用示例
+- loop.cases.NumberGuess.java :猜数字经典例题
+- loop.cases.PrintPattern.java :打印一个4行5列的图形
+- loop.cases.RightTriangle.java :打印一个直角三角形
 ## for循环
 **for循环格式**
 ```text
@@ -45,7 +45,7 @@ for(初始化语句;条件判断语句;条件控制语句){
 ```
 ### 例
 **打印1~5**  
-对应代码：**ForDemo.java**
+对应代码：**loop.basic.ForDemo.java**
 ```java
  public static void main(String[] args) {
        for (int i = 1;i <=5;i++){
@@ -72,7 +72,7 @@ while(条件判断语句){
 ```
 ### 例
 **题目：利用while循环，实现游戏中连续跳跃五次，用输出语句模拟跳跃逻辑。**  
-对应代码：**WhileDemo.java**
+对应代码：**loop.basic.WhileDemo.java**
 ```java
  public static void main(String[] args) {
         int i =1;
@@ -105,7 +105,7 @@ do{
 **小贴士：do...while循环语句是先执行后判断**
 ## 无限循环
 ### 例
-对应代码：**InfiniteLoop.java**
+对应代码：**loop.basic.InfiniteLoop.java**
 ```java
  public static void main(String[] args) {
        while(true){
@@ -140,7 +140,7 @@ java: 无法访问的语句
 ### break
 只能写在switch或循环中，表示结束，不能单独书写  
 **例**  
-对应代码：**BreakDemo.java**
+对应代码：**loop.basic.BreakDemo.java**
 ```java
  public static void main(String[] args) {
       for (int i =1;i<=10;i++){
@@ -162,7 +162,7 @@ java: 无法访问的语句
 ### 例题
 **键盘录入一个大于2的整数，判断是否为质数**
 - **写法一**  
-  对应代码：**PrimeNumber_Demo1.java**
+  对应代码：**loop.cases.PrimeNumber_Demo1.java**
 ```java
    public static void main(String[] args) {
         //键盘录入一个大于2的整数
@@ -193,7 +193,7 @@ java: 无法访问的语句
 ```  
 **小贴士**：在循环里定义的变量只能用于循环，一旦出了循环，就会被销毁，而代码中的num变量，出了while循环之后还会用到，所以要在循环外定义变量。**这里我的建议是，在写代码时，尽量不要在循环内定义变量，减少报错的几率。**
 - **写法二**  
-  对应代码：**PrimeNumber_Demo2**
+  对应代码：**loop.cases.PrimeNumber_Demo2**
   要证明一个数字是不是质数，就是看它有没有除了1和它本身的因数，且因数都是成对出现的，一个数字大于等于平方根，一个数字小于等于平方根的，所以只需要判断在1到平方根之间有没有数能整除num即可  
   **num的平方根的代码写法是'Math.sqrt(num)'**
 ```java
@@ -210,7 +210,7 @@ java: 无法访问的语句
 continue表示结束本次循环，继续下次循环，且只能写在循环中（用法类似于跳过），不能单独书写
 ### 例题
 **循环打印1~5，跳过3**  
-对应代码：**ContinueDemo.java**
+对应代码：**loop.basic.ContinueDemo.java**
 ```java
  public static void main(String[] args) {
         for(int i =1;i<=5;i++){
@@ -265,7 +265,7 @@ public class test1 {
 -378128417
 ```  
 ### 猜数字代码
-对应代码：**NumberGuess.java**
+对应代码：**loop.cases.NumberGuess.java**
 ```java
 import java.util.Random;
 import java.util.Scanner;
@@ -318,7 +318,7 @@ public class test1 {
 \*****
 - `System.out.println();`表示先打印，再换行
 - `System.out.print();`去掉ln，表示只打印，不换行  
-  对应代码：**PrintPattern.java**
+  对应代码：**loop.cases.PrintPattern.java**
 ```java
  public static void main(String[] args) {
         for (int line =1;line<=4;line++){
@@ -342,7 +342,7 @@ public class test1 {
 \**  
 \***  
 \****  
-对应代码：**RightTriangle.java**
+对应代码：**loop.cases.RightTriangle.java**
 ```java
 public static void main(String[] args) {
         for(int line =1;line<=4;line++){

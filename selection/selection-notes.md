@@ -19,13 +19,13 @@
 代码所在目录：java-learning/selection/  
 本节对应代码：
 - DoubleDemo_error.txt :switch表达式结果不能是小数或者long类型
-- MenuDemo.java ：switch简单示例
-- SwitchCasePenetration.java :case穿透示例
-- SwitchArrowLabel.java :case箭头标签示例
-- ArrowDemo1.java :只有一条语句时，case箭头的写法
-- ArrowDemo2.java :case箭头示例
-- ArrowDemo3.java :case箭头示例
-- SwitchResultDemo.java :switch可以有运行结果,以及yield关键字
+- selection.MenuDemo.java ：switch简单示例
+- selection.SwitchCasePenetration.java :case穿透示例
+- selection.SwitchArrowLabel.java :case箭头标签示例
+- selection.ArrowDemo1.java :只有一条语句时，case箭头的写法
+- selection.ArrowDemo2.java :case箭头示例
+- selection.ArrowDemo3.java :case箭头示例
+- selection.SwitchResultDemo.java :switch可以有运行结果,以及yield关键字
 ## switch语句格式
 ```text
 switch(表达式){
@@ -71,7 +71,7 @@ java: selector type double is not allowed
 周四是可乐鸡翅，  
 周五是牛肉火锅，  
 键盘录入日期，查看那天的菜单**  
-对应的代码：**MenuDemo.java**
+对应的代码：**selection.MenuDemo.java**
 ```java
 public static void main(String[] args) {
 
@@ -127,7 +127,7 @@ case 3:
 **表达式结果为1/2/3，都执行语句**
 ### 例题
 **假设周一周二周三的主食都是米饭，周四周五的主食都是面条，键盘录入日期，查看当天的主食**  
-对应代码：**SwitchCasePenetration.java**
+对应代码：**selection.SwitchCasePenetration.java**
 ```java
 public static void main(String[] args) {
 
@@ -179,7 +179,7 @@ case 1 ->{
 }
 ```
 ### 例
-对应代码：**SwitchArrowLabel.java**
+对应代码：**selection.SwitchArrowLabel.java**
 ```java
         switch(weekday) {
             case 1 -> {
@@ -207,7 +207,7 @@ case 1 ->{
 case 1 ->语句；
 ```
 ### 例
-对应代码：**ArrowDemo1.java**
+对应代码：**selection.ArrowDemo1.java**
 ```java
 switch(weekday) {
             case 1 -> System.out.println("红烧排骨");
@@ -225,7 +225,7 @@ case 1,2,3 -> {
 }
 ```
 ### 例
-对应代码：**ArrowDemo2.java**
+对应代码：**selection.ArrowDemo2.java**
 ```java
 switch(weekday){
             case 1,2,3->{
@@ -244,7 +244,7 @@ switch(weekday){
 case 1,2,3 ->语句； 
 ```
 ### 例
-对应代码：**ArrowDemo3.java**
+对应代码：**selection.ArrowDemo3.java**
 ```java
 switch(weekday){
             case 1,2,3-> System.out.println("米饭");
@@ -254,7 +254,7 @@ switch(weekday){
 ```
 ## switch可以有运行结果
 ### 例
-对应代码：**SwitchResultDemo.java**
+对应代码：**selection.SwitchResultDemo.java**
 ```java
  String food = switch(weekday){
             case 1,2,3->{
@@ -274,7 +274,7 @@ switch(weekday){
 ## yield关键字
 **yield用于显示返回分支的结果并终止switch**
 ### 例
-对应代码：**SwitchResultDemo.java**
+对应代码：**selection.SwitchResultDemo.java**
 ```java
 case 1,2,3->{
                 yield"米饭";

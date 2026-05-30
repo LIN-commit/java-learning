@@ -23,16 +23,16 @@
 https://github.com/LIN-commit/java-learning  
 代码所在目录：java-learning/basic/  
 本节对应代码文件：
-- HelloWorld.java  入门主程序，主方法，打印语句
-- CommentDemo.java  注释相关代码
-- VariableDemo.java  变量，数据类型，标识符
-- ScannerDemo.java  键盘录入
+- basic.HelloWorld.java  入门主程序，主方法，打印语句
+- basic.CommentDemo.java  注释相关代码
+- basic.VariableDemo.java  变量，数据类型，标识符
+- basic.ScannerDemo.java  键盘录入
 ## 创建项目
 如果在初始界面，点击“new project”;如果是界面是在之前的project，想再创建一个，点击左上角->new->project,弹出页面，输入项目名称name和存储地址location，即可创建成功。
 ## 删除项目
 进入想要删除的项目，点击左上角，找到“Close Project”，回到初始界面，右键点击这个文件，找到“Remove from Recent Projects”,点击后选择“remove”，就可以删除了。
 ## 快捷输入
-**对应代码：HelloWorld.java**
+**对应代码：basic.HelloWorld.java**
 ### psvm
 输入“psvm”，回车，代码自动生成
 
@@ -51,7 +51,7 @@ https://github.com/LIN-commit/java-learning
 这是输出语句/打印语句
 
 ## 注释
-**对应代码：CommentDemo.java**
+**对应代码：basic.CommentDemo.java**
 ### 单行注释
 ```java
 //单行注释
@@ -84,7 +84,7 @@ helloworld表示类名，{ }是类的范围
 - 小数类型
 - 布尔类型
 ## 变量
-**对应代码：VariableDemo.java**  
+**对应代码：basic.VariableDemo.java**  
 数据类型  变量名 = 数据值；  
 `int a = 3 ;`  
 变量名建议使用“小驼峰命名法”：第一个单词首字母小写，后面每个单词首字母大写，例如“myFirstNumber”
@@ -115,7 +115,7 @@ helloworld表示类名，{ }是类的范围
 
 
 ## 键盘录入
-**对应代码：ScannerDemo.java**  
+**对应代码：basic.ScannerDemo.java**  
 1.找到scanner
 (1)在程序主入口中输入`scanner`后，回车，代码自动变为`Scanner`，IDEA会自动在文件最上方添加一行`import java.util.Scanner;`
 ```java

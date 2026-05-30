@@ -20,14 +20,14 @@
 <https://github.com/LIN-commit/java-learning>  
 代码所在目录：java-learning/method/  
 本节对应代码：
-- MethodDemo1.java :定义一个方法，求两数之和
-- MethodDemo2.java :去除重复元素
-- MethodDemo3.java :定义一个方法，遍历数组
-- MethodDemo4.java :定义一个方法，打印九九乘法表
-- MethodDemo5.java :方法重载的简单示例
-- Exercise1.java :练习题，评委打分
-- Exercise2.java :练习题，计算班级分数
-- Exercise3.java :计算快递邮费
+- method.basic.MethodDemo1.java :定义一个方法，求两数之和
+- method.basic.MethodDemo2.java :去除重复元素
+- method.basic.MethodDemo3.java :定义一个方法，遍历数组
+- method.basic.MethodDemo4.java :定义一个方法，打印九九乘法表
+- method.basic.MethodDemo5.java :方法重载的简单示例
+- method.cases.Exercise1.java :练习题，评委打分
+- method.cases.Exercise2.java :练习题，计算班级分数
+- method.cases.Exercise3.java :计算快递邮费
 ## 方法的定义
 - **方法**：程序中的独立功能，也是最小的执行单元
 - **使用场景**：经常使用的代码打包，放在方法当中
@@ -41,7 +41,7 @@ public static 返回值类型 方法名 （参数1，参数2……）{
 ```
 ### 简单示例
 ```java
-public class MethodDemo1 {
+public class method.basic.MethodDemo1 {
     //定义一个方法，求两个数的和
     /*
     方法的定义格式：
@@ -85,7 +85,7 @@ public class MethodDemo1 {
 ```java
 import java.util.Random;
 
-public class MethodDemo2 {
+public class method.basic.MethodDemo2 {
     /*
     去除重复元素。
     获取10个1~100之间的随机数并存入到数组当中，要求数据是唯一的
@@ -131,7 +131,7 @@ public class MethodDemo2 {
 ### 遍历数组
 **题目：定义一个方法遍历数组**
 ```java
-public class MethodDemo3 {
+public class method.basic.MethodDemo3 {
     //定义一个方法遍历数组
     /*
     遍历格式如下：
@@ -164,7 +164,7 @@ public class MethodDemo3 {
 **题目：定义一个方法，打印九九乘法表**
 对应代码：****
 ```java
-public class MethodDemo4 {
+public class method.basic.MethodDemo4 {
     public static void main(String[] args) {
         printMulTable();
     }
@@ -205,9 +205,9 @@ public class MethodDemo4 {
 - 每个方法具有不同的参数类型和参数个数，这些同名的方法，就构成了重载关系
 - 简单理解：同一个类，方法名相同，参数不同的方法，就是重载关系（无需看返回值）
 ### 简单示例
-对应代码：**MethodDemo5.java**
+对应代码：**method.basic.MethodDemo5.java**
 ```java
-public class MethodDemo5 {
+public class method.basic.MethodDemo5 {
     public static void main(String[] args) {
         //求两个小数的和
         System.out.println(sum(1.2,3.4));
@@ -240,11 +240,11 @@ public class MethodDemo5 {
 - 定义方法分别求数组中的最大值和最小值
 - 计算五名评委的总分
 - 总分减去最大值减去最小值，求选手最终的平均分
-  对应代码：**Exercise1.java**
+  对应代码：**method.cases.Exercise1.java**
 ```java
 import java.util.Scanner;
 
-public class Exercise1 {
+public class method.cases.Exercise1 {
     //跳水比赛
     public static void main(String[] args) {
         //键盘录入分数，存入数组
@@ -309,11 +309,11 @@ public class Exercise1 {
 - 定义方法，求及格人数，根据及格人数，求及格率
 - 定义方法求总分，根据总分求平均分
 - 定义方法求最大值
-  对应代码：**Exercise2.java**
+  对应代码：**method.cases.Exercise2.java**
 ```java
 import java.util.Scanner;
 
-public class Exercise2 {
+public class method.cases.Exercise2 {
     //计算班级分数
     public static void main(String[] args) {
         //键盘录入10名同学的成绩
@@ -411,7 +411,7 @@ public class Exercise2 {
 ```java
 import java.util.Scanner;
 
-public class Exercise3 {
+public class method.cases.Exercise3 {
     //计算快递邮费
     public static void main(String[] args) {
         //录入快递重量

@@ -6,19 +6,19 @@
 - parallelogram.java :打印平行四边形
 - trapezoid.java :打印梯形
 - rhombus.java :打印菱形
-- hollow_rhombus.java :打印空心菱形
-- NineNineTable.java :打印九九乘法表
-- TabDemo1.java :制表符的简单示例
-- TabDemo2.java :制表符补空格的规则示例
+- loop.examples.hollow_rhombus.java :打印空心菱形
+- loop.examples.NineNineTable.java :打印九九乘法表
+- loop.examples.TabDemo1.java :制表符的简单示例
+- loop.examples.TabDemo2.java :制表符补空格的规则示例
 ## 打印多个复杂图形
 ### 打印平行四边形
 ![平行四边形图](https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-04%20131008.png)
 
 **写法一**  
 先打印每一行开始的空格，在打印后面的*  
-对应代码：**ParallelogramDemo1.java**
+对应代码：**loop.examples.ParallelogramDemo1.java**
 ```java
-public class ParallelogramDemo1 {
+public class loop.examples.ParallelogramDemo1 {
     public static void main(String[] args) {
        for (int line =1;line<=3;line++){
            for (int blank =line;blank<=2;blank++)
@@ -42,9 +42,9 @@ public class ParallelogramDemo1 {
 拼接拆分图形，拼接为一个长方形（或者三角形），再拆分为三角形和长方形  
 <img src="https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-04%20230935.png" width="200">
 
-对应代码：**ParallelogramDemo2.java**
+对应代码：**loop.examples.ParallelogramDemo2.java**
 ```java
-public class ParallelogramDemo2 {
+public class loop.examples.ParallelogramDemo2 {
     public static void main(String[] args) {
         for(int line =1;line<=3;line++){
             //先打印左上角的红色部分，把*换成空格
@@ -81,7 +81,7 @@ public class ParallelogramDemo2 {
 **写法一**：
 对应代码：**
 ```java
-public class TrapezoidDemo1 {
+public class loop.examples.TrapezoidDemo1 {
     public static void main(String[] args) {
         for (int line =1;line<=3;line++){
             for (int blank =line;blank<=2;blank++)
@@ -103,9 +103,9 @@ public class TrapezoidDemo1 {
 **写法二**：  
 <img src="https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-06%20095356.png" width="150">
 
-对应代码：**TrapezoidDemo2.java**
+对应代码：**loop.examples.TrapezoidDemo2.java**
 ```java
-public class TrapezoidDemo2 {
+public class loop.examples.TrapezoidDemo2 {
     //通过拼接法打印梯形
     public static void main(String[] args) {
         for(int line = 1; line<=3 ; line++){
@@ -137,7 +137,7 @@ public class TrapezoidDemo2 {
 <img src="https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-04%20132437.png" width="150">  
 
 **写法一**：  
-对应代码：**RhombusDemo1.java**
+对应代码：**loop.examples.RhombusDemo1.java**
 ```java
 public class rhombus {
     public static void main(String[] args) {
@@ -174,9 +174,9 @@ public class rhombus {
 **写法二**：  
 <img src="https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-06%20103442.png" width="100">
 
-对应代码：**RhombusDemo2.java**
+对应代码：**loop.examples.RhombusDemo2.java**
 ```java
-public class RhombusDemo2 {
+public class loop.examples.RhombusDemo2 {
     //运用拼接法打印菱形
     //将菱形分为上半部分4行，下半部分3行
     public static void main(String[] args) {
@@ -228,9 +228,9 @@ public class RhombusDemo2 {
 用拼接法构造这个图形  
 <img src="https://raw.githubusercontent.com/LIN-commit/java-learning/refs/heads/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-05-06%20125315.png" width="100">
 
-对应代码：**hollow_rhombus.java**
+对应代码：**loop.examples.hollow_rhombus.java**
 ```java
-public class hollow_rhombus {
+public class loop.examples.hollow_rhombus {
     //运用拼接法打印空心菱形
     public static void main(String[] args) {
         //图形分为上下两部分，上半部分4行，下半部分3行
@@ -286,9 +286,9 @@ public class hollow_rhombus {
    *
 ```
 ## 打印九九乘法表
-对应代码：**NineNineTable.java**
+对应代码：**loop.examples.NineNineTable.java**
 ```java
-public class NineNineTable {
+public class loop.examples.NineNineTable {
     //打印九九乘法表
     public static void main(String[] args) {
         for (int line =1; line<=9; line++){
@@ -315,9 +315,9 @@ public class NineNineTable {
 ### 制表符
 - **简单理解**：`\t`是长度可变的大空格，打印表格类数据的时候，可以让上下对齐  
   **例**  
-  对应代码：**TabDemo1.java**
+  对应代码：**loop.examples.TabDemo1.java**
 ```java
-public class TabDemo1 {
+public class loop.examples.TabDemo1 {
     //打印同学的姓名、年龄、性别
     public static void main(String[] args) {
         System.out.println("name\t\tage\t\tgender");
@@ -335,9 +335,9 @@ lisi		age		male
 - **真正含义**：在前面的字符后面补1-4个空格，让这个整体长度凑成4的倍数（这个整体是指前面的字符加制表符）  
   如果前面的字符本是就已经是4的倍数了，那么制表符还会补4个空格（不会补0个空格）  
   **例**  
-  对应代码：**TabDemo2.java**
+  对应代码：**loop.examples.TabDemo2.java**
 ```java
-public class TabDemo2 {
+public class loop.examples.TabDemo2 {
     //制表符补空格的示例
     public static void main(String[] args) {
         //制表符会把在自己前面的字符和补的空格看做一个整体，这个整体的长度必须是4的倍数
